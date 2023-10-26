@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Active Directory Access Request</title>
+        <link rel="stylesheet" href="/css/style.css" />
+    </head>
+    <body>
+        <h1>Active Directory Access Request</h1>
+
+        <form id="accessRequestForm">
+            <label for="username">Search for User:</label>
+            <input type="text" id="username" placeholder="Enter username" />
+            <select id="userDropdown"></select>
+
+            <br />
+
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate" />
+
+            <label for="endDate">End Date:</label>
+            <input type="date" id="endDate" />
+
+            <br />
+
+            <button type="button" id="submitRequest">Submit</button>
+        </form>
+
+        <h2>Previously Submitted Requests</h2>
+        <table id="requestTable">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Previously submitted requests will be added here -->
+            </tbody>
+        </table>
+
+        <script>
+            // Add your JavaScript logic here
+            // You can use JavaScript to populate the dropdown, handle form submissions, and update the table.
+        </script>
+    </body>
+</html>
